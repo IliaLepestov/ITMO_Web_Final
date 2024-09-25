@@ -1,0 +1,13 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_3_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" filter="url(#svg_3_blur)" stroke-width="14" ry="70" rx="67.5" id="svg_3" cy="138" cx="123.5" fill="none"/>
+  <path id="svg_6" d="m204.90501,159.70814l73.49999,-140l73.49999,140l-146.99999,0z" stroke="#000" fill="#00ffff"/>
+  <path id="svg_7" d="m169.18998,284.26002l42.07501,-40.725l0,20.36251l30.3875,0l0,-29.4125l-21.03751,0l42.07501,-40.725l42.075,40.725l-21.0375,0l0,29.4125l30.38752,0l0,-20.36251l42.07499,40.725l-42.07499,40.725l0,-20.3625l-30.38752,0l0,29.41251l21.0375,0l-42.075,40.72499l-42.07501,-40.72499l21.03751,0l0,-29.41251l-30.3875,0l0,20.3625l-42.07501,-40.725z" stroke-width="14" stroke="#eaea17" fill="none"/>
+ </g>
+</svg>

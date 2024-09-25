@@ -1,0 +1,51 @@
+body {
+    font: 0.8em Arial, Helvetica, sans-serif;
+    background: #D7E1F2;
+    color: #ffe;
+}
+
+a {
+    color: #020e14;
+}
+
+section {
+    width: 500px;
+    /* Ширина макета */
+    margin: 0 auto;
+    background: #484737;
+}
+
+header {
+    font-size: 2.2em;
+    text-align: center;
+    padding: 5px;
+    background: #6e4748;
+}
+
+nav,
+aside {
+    float: left;
+    width: 110px;
+    padding: 5px;
+}
+
+article {
+    background: #54B948;
+    margin: 0 120px;
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    color: #000;
+}
+
+h2 {
+    margin: 0 0 1em;
+}
+
+footer {
+    clear: both;
+    padding: 5px;
+    background: #D71920;
+}

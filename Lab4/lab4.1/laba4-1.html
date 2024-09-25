@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Практика 4 - 1</title>
+    <script src="convas.js"></script>
+    <script>
+        (function(){
+            window.addEventListener('DOMContentLoaded', () => {
+            (function() {
+                "use strict";
+                if (Modernizr.canvas){
+                    const canvas = document.getElementById("canvas");
+                    if (canvas) {
+                        canvas.setAttribute("width", "500px");
+                        canvas.setAttribute("height", "400px");
+                        const context = canvas.getContext("2d");
+                        const gradient = context.createLinearGradient(0, 0, 500, 400);
+                        gradient.addColorStop(0, 'rgb(232, 37, 131)');
+                        gradient.addColorStop(0.4, "rgb(15, 212, 199)");
+                        gradient.addColorStop(0.5, "rgb(19, 232, 143)");
+                        gradient.addColorStop(0.7, "yellow");
+                        context.fillStyle = gradient;
+                        context.fillRect(0, 0, 500, 400);
+                    } else {
+                        const noCanvasIdDiv = document.createElement('div');
+                        noCanvasIdDiv.textContent = "Something wrong here...";
+                        document.body.insertBefore(noCanvasIdDiv, null);
+                    }
+                }
+            })();
+        });
+        }());
+    </script>
+    <style type="text/css">
+        div {
+        width: 500px;
+        height: 250px;
+        border: 1px solid #000000;
+        padding: 8px 12px;
+        background-color: rgb(199, 80, 80) ;
+        text-align: center;
+        align-content: center;
+        font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas">
+    </canvas>
+</body>
+</html>

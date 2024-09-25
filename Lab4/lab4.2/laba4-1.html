@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Практика 4 - 2</title>
+    <script src="convas.js"></script>
+    <script>
+        (function(){
+            window.addEventListener('DOMContentLoaded', () => {
+            (function() {
+                "use strict";
+                if (Modernizr.svg || Modernizr.inlinesvg){
+
+                    const embedSect = document.getElementById("inEmbed");
+                    if (!embedSect) {
+                        const noEmbedDiv = document.createElement('div');
+                        noEmbedDiv.textContent = "Something wrong in <Embed>...";
+                        document.body.insertBefore(noEmbedDiv, null);
+                    } 
+
+                    const svgSect = document.getElementById("inSvg");
+                    if (!svgSect) {
+                        const noSvgDiv = document.createElement('div');
+                        noSvgDiv.textContent = "Something wrong in <SVG>...";
+                        document.body.insertBefore(noSvgDiv, null);
+                    } 
+
+                    const objectSect = document.getElementById("inObject");
+                    if (!objectSect) {
+                        const noObjectDiv = document.createElement('div');
+                        noObjectDiv.textContent = "Something wrong in <OBJECT>...";
+                        document.body.insertBefore(noObjectDiv, null);
+                    } 
+                } 
+            });
+        });
+        }());
+    </script>
+    <style type="text/css">
+        div {
+        width: 500px;
+        height: 250px;
+        border: 1px solid #000000;
+        padding: 8px 12px;
+        background-color: rgb(199, 80, 80) ;
+        text-align: center;
+        align-content: center;
+        font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>SVG in &ltembed&gt</th>
+            <th>SVG in &ltsvg&gt</th>
+            <th>SVG in &ltobject&gt</object></th>
+        </tr>
+        <tr>
+            <td>
+                <embed id="inEmbed" type="image/svg+xml" width="400px" height="400px" src="svg.svg">
+                </embed>
+            </td>
+            <td>
+                <svg id="inSvg" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px">
+                    <g>
+                        <ellipse stroke="#000" filter="url(#svg_3_blur)" stroke-width="14" ry="70" rx="67.5" id="svg_3" cy="138" cx="123.5" fill="none"/>
+                        <path id="svg_6" d="m204.90501,159.70814l73.49999,-140l73.49999,140l-146.99999,0z" stroke="#000" fill="#00ffff"/>
+                        <path id="svg_7" d="m169.18998,284.26002l42.07501,-40.725l0,20.36251l30.3875,0l0,-29.4125l-21.03751,0l42.07501,
+                                -40.725l42.075,40.725l-21.0375,0l0,29.4125l30.38752,0l0,-20.36251l42.07499,40.725l-42.07499,40.725l0,
+                                -20.3625l-30.38752,0l0,29.41251l21.0375,0l-42.075,40.72499l-42.07501,-40.72499l21.03751,0l0,
+                                -29.41251l-30.3875,0l0,20.3625l-42.07501,-40.725z" stroke-width="14" stroke="#eaea17" fill="none"/>
+                    </g>
+                </svg>
+            </td>
+            <td>
+                <object id="inObject" type="image/svg+xml" width="400px" height="400px" data="svg.svg">
+                </object>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+    
+    
+    

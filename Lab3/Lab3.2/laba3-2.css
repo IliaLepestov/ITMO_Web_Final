@@ -1,0 +1,23 @@
+header{
+    font-weight:bold;
+    padding-top: 10px;
+}
+ul{
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px rgb(161, 33, 10);
+    background-color: rgb(245, 220, 138);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    padding-left: 20px;
+}
+li{
+    color: rgb(161, 33, 10);
+    padding-block: 3px;
+}

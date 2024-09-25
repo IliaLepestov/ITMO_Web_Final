@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="geolocation.js"></script>
+    <title>Главная страница</title>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Video.html">Видео</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="storage.html">Данные</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>На этой странице вы можете наблюдать реализацию Geolocation API и функции audio </h2>
+            <div>Если вы не слышите музыку на этой странице, проверьте настройки своего браузера!</div>
+        </section>
+        <section id="location">
+            <h2>Ваше текущее местоположение</h2>
+            <p><strong>Широта:</strong> <span id="latitude">определение...</span></p>
+            <p><strong>Долгота:</strong> <span id="longitude">определение...</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Моя зачётная работа</p>
+    </footer>
+    <audio src="media/Audio1.mp3"autoplay loop></audio>
+</body>
+</html>

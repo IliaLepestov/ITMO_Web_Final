@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Галерея</title>
+</head>
+<body>
+    <header>
+        <h1>Галерея</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Video.html">Видео</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="storage.html">Данные</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Наши работы</h2>
+                <canvas id="myCanvas" width="150" height="100"></canvas>
+              </div>
+              <script>
+                const canvas = document.getElementById('myCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#FF0000';
+                ctx.fillRect(0, 0, 150, 100);
+              </script>
+            </section>
+        <section>
+            <img id="image" src= "media/art gif.gif"  width="150" height="100" draggable="true">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Моя зачётная работа</p>
+    </footer>
+</body>
+</html>
