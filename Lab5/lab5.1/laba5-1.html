@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Практика 5 - 1</title>
+    <script src="laba5-1.js"></script>
+</head>
+<body>
+    <form id="userform" name="userform" method="post" autocomplete="off" action="">
+        <header>
+            <h2>Лабораторная работа 5-1</h2>
+            <h3>Пожалуйста, заполните обязательные поля.</h3>
+        </header>
+        <p>
+            <label for="username">Имя: </label>
+            <input name="username" id="username" type="text" 
+                autofocus="autofocus"
+                pattern="\p{L}+"  
+                minlength="6"
+                maxlength="18"
+                required="required"/>
+            <img id="forNameCheck" src="media/no.jpeg"></img>
+        </p>
+        <p>
+            <label for="userage">Возраст: </label>
+            <input name="userage" id="userage" type="number" 
+                min="10" max="150"
+                required="required"/>
+            <img id="forAgeCheck" src="media/yes.jpeg"></img>
+        </p>
+        <p>
+            <label for="usermail">E-mail: </label>
+            <input name="usermail" id="usermail" type="email" 
+                required="required"/>
+            <img id="forMailCheck" src="media/no.jpeg"></img>
+        </p>
+
+        <p>
+            <label for="usersite">Сайт: </label>
+            <input name="usersite" id="usersite" type="url"/>
+            <img for="usersite" src="media/yes.jpeg"></img>
+        </p>
+
+        <p>
+            <input type="submit" id="submitBtn" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>
+    
